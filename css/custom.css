@@ -5,9 +5,17 @@
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
 
-section, #section-1, #content, .bg-current, footer#footer, .full-header, #header-wrap {
+section,
+#section-1,
+#content,
+.bg-current,
+footer#footer,
+.full-header,
+#header-wrap,
+#copyrights {
 	background-color: #ADD3B5;
 }
+
 .permanent-marker-regular {
 	font-family: "Permanent Marker", cursive;
 	font-weight: 400;
@@ -28,13 +36,38 @@ section, #section-1, #content, .bg-current, footer#footer, .full-header, #header
 	font-family: 'Permanent Marker', cursive;
 }
 
-@media(max-width: 768px) {
-	#title {
-		display: none;
-	}
-}
+
 
 :root {
 	--cnvs-themecolor: #171816;
 	--cnvs-themecolor-rgb: 23, 24, 22;
+}
+
+#contattaci-button {
+	display: flex;
+	align-items: center;
+	border: solid 2px black;
+	padding: 10px;
+	border-radius: 6px;
+	background-color: aliceblue;
+}
+
+#contattaci-button h5 {
+	margin: 0;
+	font-weight: bold;
+	color: black;
+}
+
+#interventi-title {
+	font-size: 4rem
+}
+
+@media(max-width: 768px) {
+	#title {
+		display: none;
+	}
+
+	#interventi-title {
+		font-size: 3rem
+	}
 }
