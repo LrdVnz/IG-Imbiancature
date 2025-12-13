@@ -5,7 +5,36 @@
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
 
+section, #section-1, #content, .bg-current, footer#footer, .full-header, #header-wrap {
+	background-color: #ADD3B5;
+}
+.permanent-marker-regular {
+	font-family: "Permanent Marker", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
 #section-1 {
 	background-color: #ffffff00;
 }
 
+#title {
+	flex-grow: 1;
+	margin-left: 3rem;
+	margin-top: 1.2rem;
+}
+
+#title h1 {
+	font-family: 'Permanent Marker', cursive;
+}
+
+@media(max-width: 768px) {
+	#title {
+		display: none;
+	}
+}
+
+:root {
+	--cnvs-themecolor: #171816;
+	--cnvs-themecolor-rgb: 23, 24, 22;
+}
